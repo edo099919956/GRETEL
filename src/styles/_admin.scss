@@ -1,0 +1,126 @@
+.adminPopup {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    &__wrap {
+        border-radius: 10px;
+        padding: 40px;
+        box-sizing: border-box;
+        box-shadow: 0 0 35px -20px #000;
+        color: white;
+        background: #00000036;
+        @media screen and (max-width: 375px) {
+            padding: 20px;
+        }
+    }
+    &__title {
+        font-family: "Edu SA Beginner", cursive;
+        font-family: "Pacifico", cursive;
+        text-transform: capitalize;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        min-height: 300px;
+        justify-content: space-evenly;
+    }
+    &__form-name {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: "Edu TAS Beginner", cursive;
+    }
+    &__form-password {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: "Edu TAS Beginner", cursive;
+    }
+    &__form-labels {
+        margin-bottom: 10px;
+    }
+    &__form-inputs {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        border-radius: 5px;
+        outline: none;
+        padding: 8px;
+        color: white;
+    }
+    &__form-remember {
+        font-family: "Edu TAS Beginner", cursive;
+        font-weight: 600;
+    }
+    &__form-checkbox {
+        accent-color: #d200ff;
+        font-family: "Edu TAS Beginner", cursive;
+    }
+    &__form-btn {
+        font-family: "Edu TAS Beginner", cursive;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 5px;
+        padding: 8px;
+        text-align: center;
+        transition: 200ms;
+        cursor: pointer;
+    }
+}
+.adminMenue {
+    min-height: 100vh;
+    align-items: center;
+    display: none;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__listsContainer {
+        max-width: 450px;
+        min-width: 300px;
+        font-family: "ArTarumianHeghnar";
+        font-weight: normal;
+        font-style: italic;
+        list-style-type: none;
+        color: #fff;
+        margin: 40px 10px;
+        padding: 40px 10px;
+        box-sizing: border-box;
+        line-height: 1.5;
+        border-radius: 10px;
+        word-wrap: break-word;
+    }
+    &__lists-titles {
+        text-align: center;
+        font-size: 25px;
+        border-bottom: 1px solid white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        @media screen and (max-width: 370px) {
+            font-size: 20px;
+        }
+    }
+    &__lists {
+        font-size: 20px;
+        @media screen and (max-width: 370px) {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.animeShadow {
+    position: relative;
+    background: linear-gradient(to left bottom, #d200ff, #b500ff, #9300ff, #6800ff, #0b00ff);
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #fb0094, #0000ff, #00ff00, #ff0000);
+        background-size: 400%;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        z-index: -1;
+        animation: animeShadow 40s linear infinite;
+        border-radius: 10px;
+    }
+    &::after {
+        filter: blur(50px);
+    }
+}
+@keyframes animeShadow {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

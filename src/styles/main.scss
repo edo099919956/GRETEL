@@ -1,0 +1,46 @@
+@import "./_fonts";
+@import "./_index";
+@import "./_admin";
+@import "./_menue";
+@import "./_animation";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to left bottom, #d200ff, #b500ff, #9300ff, #6800ff, #0b00ff);
+}
+body,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+a,
+li {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+a,
+button {
+    cursor: pointer;
+    color: inherit;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+.container__wrap {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
